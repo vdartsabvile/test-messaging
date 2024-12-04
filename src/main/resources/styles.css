@@ -1,0 +1,40 @@
+/* Стили для текста внутри окна */
+.label {
+    -fx-font-size: 28px;           /* Увеличиваем размер текста */
+    -fx-font-weight: bold;         /* Делаем текст жирным */
+    -fx-text-fill: #FFFFFF;        /* Белый цвет текста */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); /* Добавляем тень к тексту */
+}
+
+/* Стили для контейнера (корневого элемента) */
+.stack-pane {
+    -fx-background-color: linear-gradient(to bottom right, #2196F3, #21CBF3); /* Градиентный фон */
+    -fx-padding: 20px;              /* Внутренние отступы */
+    -fx-alignment: center;          /* Центрируем содержимое */
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Общие стили для шрифтов */
+* {
+    -fx-font-family: "Poppins", sans-serif;
+}
+
+/* Стили для кнопок */
+.button {
+    -fx-width: 200px;
+    -fx-height: 35px;
+    -fx-padding: 1em;
+    -fx-background-color: rgb(43, 43, 43);
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-position: relative;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.16), 10, 0, 0, 0);
+}
+
+/* Псевдоэлементы и эффекты наведения */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #021B79, #0575E6);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
